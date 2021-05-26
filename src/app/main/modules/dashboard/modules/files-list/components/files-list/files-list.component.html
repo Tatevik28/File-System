@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="large header first" (click)="setOrders('path')">
+        <i  *ngIf="orders.path"
+            [class]="orders.path === 'asc' ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"
+        ></i>
+        <span>Name</span>
+    </div>
+    <div class="medium header" (click)="setOrders('modificationDate')">
+        <i  *ngIf="orders.modificationDate"
+            [class]="orders.modificationDate === 'asc' ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"
+        ></i>
+        <span>Date modified</span>
+    </div>
+    <div class="small header" (click)="setOrders('type')">
+        <i  *ngIf="orders.type"
+            [class]="orders.type === 'asc' ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"
+        ></i>
+        <span>Type</span>
+    </div>
+    <div class="small header" (click)="setOrders('size')">
+        <i  *ngIf="orders.size"
+            [class]="orders.size === 'asc' ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"
+        ></i>
+        <span>Size</span>
+    </div>
+</div>
+<div *ngFor="let item of currentItems">
+    <app-file-item *ngIf="item" [item]="item" (dblclick)="redirectToFile(item)"></app-file-item>
+</div>

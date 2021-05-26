@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px;
+  cursor: context-menu;
+  font-family: SansSerif;
+
+  .large {
+    width: 50%;
+  }
+
+  .medium {
+    width: 30%
+  }
+
+  .small {
+    width: 10%;
+  }
+
+  .header {
+    color: steelblue;
+    border-right: 1px solid #cccbc8;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    min-height: 35px;
+    font-size: 16px;
+
+    &.first {
+      padding-left: 0px;
+    }
+
+    i {
+      display: block;
+    }
+  }
+}
+
+

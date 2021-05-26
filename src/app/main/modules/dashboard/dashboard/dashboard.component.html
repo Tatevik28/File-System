@@ -1,0 +1,25 @@
+<div class="flex">
+    <i class="fas fa-arrow-up" (click)="redirectToParentFolder()"></i>
+    <div class="large-column path">
+        <div class="inner">
+            <i class="fas fa-folder"></i>
+            {{path}}
+        </div>
+    </div>
+    <div class="small-column search">
+        <app-input-box (input)="searchPath($event)" [classList]="'search'">
+              <input type="text"
+                     placeholder="Search"
+            />
+        </app-input-box>
+    </div>
+</div>
+
+
+<div class="large-column">
+    <app-files-list (pathClicked)="changeCurrentPath($event)"
+                    [searchValue]="inputValue"
+                    [searchInPath]="searchInPath"
+                    [redirectPath]="parentPath"
+    ></app-files-list>
+</div>

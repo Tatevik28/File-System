@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="large">
+      <i class="fas fa-file-alt" *ngIf="item?.type === ('Text Document' || 'file')"></i>
+      <i class="fas fa-folder" *ngIf="item?.type === 'folder'"></i>
+      <i class="far fa-file-pdf" *ngIf="item?.type === 'PDF File'"></i>
+      <i class="fas fa-file-image" *ngIf="item?.type === 'JPEG File'"></i>
+      <i class="far fa-file-word" *ngIf="item?.type === 'Document'"></i>
+      <i class="fas fa-file-csv" *ngIf="item?.type === 'CSV File'"></i>
+        {{name}}
+    </div>
+    <div class="medium">
+        {{item?.modificationDate}}
+    </div>
+    <div class="small">
+        {{item?.type}}
+    </div>
+    <div class="small">
+        {{item?.size}}
+    </div>
+</div>
+

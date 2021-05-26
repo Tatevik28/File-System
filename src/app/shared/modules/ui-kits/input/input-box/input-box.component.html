@@ -1,0 +1,8 @@
+<div class="input" [ngClass]="classList">
+    <span *ngIf="label">{{label}}</span>
+    <div class="relative">
+        <ng-content select="input[jInput]"></ng-content>
+        <ng-content></ng-content>
+    </div>
+</div>
+

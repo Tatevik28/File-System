@@ -1,0 +1,39 @@
+.large-column {
+  width: 80%;
+}
+
+.small-column {
+  width: 20%;
+}
+
+.fa-folder {
+  color: #ffeb99;
+}
+
+.inner {
+  margin: auto;
+  padding: 5px;
+  font-family: "Arial Armenian";
+}
+
+.path {
+  border: 1px solid grey;
+  height: 30px;
+  margin-right: 20px;
+  padding-left: 10px;
+}
+
+.fa-search {
+  color: grey;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.fa-arrow-up {
+  margin-right: 10px;
+  cursor: pointer;
+  color: grey;
+}
